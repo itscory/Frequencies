@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0460C4891C188BAF00DF67E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0460C4881C188BAF00DF67E3 /* Main.storyboard */; };
+		043481D01C1899CE00ABA14E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043481CF1C1899CE00ABA14E /* Main.storyboard */; };
+		043481D21C18C1F600ABA14E /* DevHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043481D11C18C1F600ABA14E /* DevHelper.swift */; };
 		0460C48B1C188BC100DF67E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0460C48A1C188BC100DF67E3 /* LaunchScreen.storyboard */; };
 		0460C48F1C18903C00DF67E3 /* AdEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0460C48E1C18903C00DF67E3 /* AdEngine.swift */; };
 		0460C4911C18931500DF67E3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0460C4901C18931500DF67E3 /* Podfile */; };
 		04D14F691C188A510031196C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D14F681C188A510031196C /* AppDelegate.swift */; };
 		04D14F6B1C188A510031196C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D14F6A1C188A510031196C /* RootViewController.swift */; };
-		04D14F6D1C188A510031196C /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D14F6C1C188A510031196C /* DataViewController.swift */; };
-		04D14F6F1C188A510031196C /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D14F6E1C188A510031196C /* ModelController.swift */; };
 		04D14F741C188A510031196C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D14F731C188A510031196C /* Assets.xcassets */; };
 		8F1A1EC99EA1F14B50C82D5B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68FFE7C699815E3F7FE956CA /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0460C4881C188BAF00DF67E3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		043481CF1C1899CE00ABA14E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		043481D11C18C1F600ABA14E /* DevHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevHelper.swift; sourceTree = "<group>"; };
 		0460C48A1C188BC100DF67E3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0460C48C1C188BD600DF67E3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0460C48E1C18903C00DF67E3 /* AdEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdEngine.swift; sourceTree = "<group>"; };
@@ -28,8 +28,6 @@
 		04D14F651C188A510031196C /* Frequencies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frequencies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D14F681C188A510031196C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04D14F6A1C188A510031196C /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		04D14F6C1C188A510031196C /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		04D14F6E1C188A510031196C /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		04D14F731C188A510031196C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11A81AC62E82B8AB2B7751C7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		68FFE7C699815E3F7FE956CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,9 +51,8 @@
 			children = (
 				04D14F681C188A510031196C /* AppDelegate.swift */,
 				04D14F6A1C188A510031196C /* RootViewController.swift */,
-				04D14F6C1C188A510031196C /* DataViewController.swift */,
-				04D14F6E1C188A510031196C /* ModelController.swift */,
 				0460C48E1C18903C00DF67E3 /* AdEngine.swift */,
+				043481D11C18C1F600ABA14E /* DevHelper.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -65,8 +62,8 @@
 			children = (
 				0460C48C1C188BD600DF67E3 /* Info.plist */,
 				0460C48A1C188BC100DF67E3 /* LaunchScreen.storyboard */,
-				0460C4881C188BAF00DF67E3 /* Main.storyboard */,
 				04D14F731C188A510031196C /* Assets.xcassets */,
+				043481CF1C1899CE00ABA14E /* Main.storyboard */,
 			);
 			path = Resources;
 			sourceTree = SOURCE_ROOT;
@@ -82,6 +79,7 @@
 				6280657FE0ADC0EFD2D3F11E /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		04D14F661C188A510031196C /* Products */ = {
 			isa = PBXGroup;
@@ -170,9 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0460C48B1C188BC100DF67E3 /* LaunchScreen.storyboard in Resources */,
-				0460C4891C188BAF00DF67E3 /* Main.storyboard in Resources */,
 				0460C4911C18931500DF67E3 /* Podfile in Resources */,
 				04D14F741C188A510031196C /* Assets.xcassets in Resources */,
+				043481D01C1899CE00ABA14E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,8 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D14F6B1C188A510031196C /* RootViewController.swift in Sources */,
-				04D14F6F1C188A510031196C /* ModelController.swift in Sources */,
-				04D14F6D1C188A510031196C /* DataViewController.swift in Sources */,
+				043481D21C18C1F600ABA14E /* DevHelper.swift in Sources */,
 				0460C48F1C18903C00DF67E3 /* AdEngine.swift in Sources */,
 				04D14F691C188A510031196C /* AppDelegate.swift in Sources */,
 			);
