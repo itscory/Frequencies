@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -18,18 +19,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZd-qA-Rhw" customClass="GADBannerView">
-                                <rect key="frame" x="140" y="550" width="320" height="50"/>
+                                <rect key="frame" x="20" y="550" width="560" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="6uW-ok-uqd"/>
                                     <constraint firstAttribute="width" constant="320" id="k25-cC-5lB"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="k25-cC-5lB"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hgd-pg-k5l" firstAttribute="top" secondItem="aZd-qA-Rhw" secondAttribute="bottom" id="Dtb-qy-GPP"/>
                             <constraint firstItem="aZd-qA-Rhw" firstAttribute="centerX" secondItem="Jz3-ke-tff" secondAttribute="centerX" id="MhN-ik-77w"/>
+                            <constraint firstItem="aZd-qA-Rhw" firstAttribute="leading" secondItem="Jz3-ke-tff" secondAttribute="leadingMargin" id="YLd-OQ-N4D"/>
                             <constraint firstItem="aZd-qA-Rhw" firstAttribute="centerX" secondItem="Jz3-ke-tff" secondAttribute="centerX" id="YbV-Wr-EYh"/>
                             <constraint firstItem="aZd-qA-Rhw" firstAttribute="centerY" secondItem="Jz3-ke-tff" secondAttribute="centerY" id="iZp-iC-BGJ"/>
                         </constraints>

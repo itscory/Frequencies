@@ -37,38 +37,35 @@ struct Logger {
         self.default_log_level = default_log_level
         self.ref_class = ref_class
         self.ref_function = ref_function
+		printHeader()
     }
     
-    private func printHeader(log_level: LogLevel) {
-        
+    private func printHeader() {
+		if ref_class != "" {
+			if ref_function == "" {
+				print("--- "+ref_class+" ---")
+			}else{
+				print(" : "+ref_function)
+			}
+		}
     }
     
-    private func printFooter(log_level: LogLevel) {
-        
-    }
-    
-    func log(body: String, var log_level: LogLevel?) {
+    func log(body: AnyObject, var log_level: LogLevel?) {
         if (log_level == nil) {
             log_level = self.default_log_level
         }
         switch(self.devHelper.app_dev_status) {
         case AppDevStatus.development:
-            printHeader(log_level!)
-            print(body)
-            printFooter(log_level!)
+            print("    •", body)
             break
         case AppDevStatus.testing:
             if log_level == LogLevel.testing || log_level == LogLevel.production {
-                printHeader(log_level!)
-                print(body)
-                printFooter(log_level!)
+                print("    •", body)
             }
                 break
         case AppDevStatus.production:
             if log_level == LogLevel.production {
-				printHeader(log_level!)
 				print(body)
-				printFooter(log_level!)
 				break
             }
         default:
